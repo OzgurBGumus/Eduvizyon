@@ -1,0 +1,67 @@
+body {
+    padding: 0px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: orange!important;
+  }
+.header{
+    background-image: url('/images/homePage1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+}
+.topMenu1{
+    
+}
+.topMenu2{
+    background-color:  #00000035;
+    margin-bottom:150px!important;
+}
+.btn-slowLight{
+    border: 1px solid #fff!important;
+    color: #fff!important;
+    padding-top: 4px!important;
+    padding-bottom: 4px!important;
+    padding-left:10px!important;
+    padding-right: 10px!important;
+    background-color: rgba(255,255,255,0.0827451)!important
+}
+.btn-slowLight:hover{
+    background-color: rgba(245,245,245,0.188235)!important
+}
+.text-75{
+    font-size: 0.75rem!important;
+}
+.logo{
+    height: 35px;
+}
+.lowShadow-box{
+    border: none!important;
+    box-shadow: 3px 4px 10px 8px rgba(227, 227, 227, 0.42);
+}
+.medShadow-box{
+    border: none!important;
+    box-shadow: 3px 4px 10px 8px rgba(227, 227, 227, 0.72);
+}
+.lowShadow-boxH{
+    border: none!important;
+    box-shadow: 3px 4px 10px 8px rgba(227, 227, 227, 0.42);
+}
+.lowShadow-boxH:hover{
+    border: 1px solid rgba(0,0,0,.125)!important;
+    box-shadow: none;
+}
+.topMenu2Link{
+    color: white!important;
+    font-size: 0.9rem;
+}
+.fixedSocials{
+    background-color: white;
+    right: 0px;
+    top: 20%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.fixed-SocialLink{
+
+}

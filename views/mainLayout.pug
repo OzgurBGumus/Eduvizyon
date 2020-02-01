@@ -1,0 +1,115 @@
+
+
+
+
+
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    block stylesheets
+      link(rel='stylesheet', href='/stylesheets/mainTopMenu.css')
+      link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css', integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh', crossorigin='anonymous')
+    block headersScripts
+      script(src='https://kit.fontawesome.com/6bc33e778c.js', crossorigin='anonymous')
+      script(src='https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js')
+      script(src='https://code.jquery.com/jquery-3.4.1.slim.min.js', integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n', crossorigin='anonymous')
+      script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js', integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo', crossorigin='anonymous')
+      script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js', integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6', crossorigin='anonymous')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    title= title
+  body
+        div
+            ul.list-group.fixedSocials.position-fixed.p-0.text-center.p-1.medShadow-box
+                li.list-group-item.p-0.border-0.py-1
+                    a.fixed-SocialLink.btn.m-0.p-0.text-primary(href='#')
+                        <i class="fab fa-2x fa-facebook"></i>
+                li.list-group-item.p-0.border-0.py-1
+                    a.fixed-SocialLink.btn.m-0.p-0.text-info(href='#')
+                        <i class="fab fa-2x fa-twitter-square"></i>
+                li.list-group-item.p-0.border-0.py-1
+                    a.fixed-SocialLink.btn.m-0.p-0.text-danger(href='#')
+                        <i class="fab fa-2x fa-youtube"></i>
+                li.list-group-item.p-0.border-0.py-1
+                    a.fixed-SocialLink.btn.m-0.p-0.text-primary(href='#')
+                        <i class="fab fa-2x fa-linkedin"></i>
+                li.list-group-item.p-0.border-0.py-1
+                    a.fixed-SocialLink.btn.m-0.p-0.text-primary(href='#')
+                        <i class="fas fa-2x fa-envelope"></i>
+                li.list-group-item.p-0.border-0.py-1
+                    a.fixed-SocialLink.btn.m-0.p-0.text-info(href='#')
+                        <i class="fas fa-2x fa-share-alt"></i>
+            .header
+                .container.px-0
+                    .topMenu1.py-2
+                        img.logo(src='/images/logo-eduvizyon.png')
+                        .btn.btn-sm.btn-slowLight.font-weight-normal.mt-1.text-75.float-right
+                            span.text-75
+                            |  Reserve by phone
+                            i.fas.fa-phone-volume.ml-1
+                        .btn.btn-sm.font-weight-normal.text-white.mt-1.float-right.my-auto
+                            span.text-75
+                            |  info@findcourse.com
+                            i.far.fa-envelope.ml-1
+                .topMenu2
+                    .container.px-2
+                        nav.navbar.navbar-expand-lg.px-1
+                            button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+                                span.navbar-toggler-icon
+                            #navbarNav.collapse.navbar-collapse
+                                ul.navbar-nav
+                                    li.nav-item.px-2
+                                        a.nav-link.topMenu2Link.py-1.font-weight-bold(href='#')
+                                            | Language schools
+                                    li.nav-item.px-2
+                                        a.nav-link.topMenu2Link.py-1.font-weight-bold(href='#')
+                                            |  University admissions
+                                    li.nav-item.px-2
+                                        a.nav-link.topMenu2Link.py-1.font-weight-bold(href='#')
+                                            |  How to book a language course
+                .topHeader.text-center.mb-4
+                    h1.text-white
+                        | Find Your Language Course Abroad at the Lowest Price
+                    div
+                        ul.nav.text-white.text-center.d-block
+                            li.nav-item.px-2.d-inline-block
+                                img.h-50.mr-1(src="https://media.findcourse.com/UI/newdesign/images/banners/winter2019/sl-price.svg", alt="")
+                                | Discounted prices 5٪ - 35٪
+                            li.nav-item.px-2.d-inline-block
+                                img.h-50.mr-1(src="https://media.findcourse.com/UI/newdesign/images/banners/winter2019/sl-coupon.svg", alt="")
+                                | No hidden fees
+                            li.nav-item.px-2.d-inline-block
+                                img.h-50.mr-1(src="https://media.findcourse.com/UI/newdesign/images/banners/winter2019/sl-printer.svg", alt="")
+                                | Visa consultation
+                            li.nav-item.px-2.d-inline-block
+                                img.h-50.mr-1(src="https://media.findcourse.com/UI/newdesign/images/banners/winter2019/sl-printer.svg", alt="")
+                                | Personal Support
+                .searchBoxes.container.px-4
+                    .select-Search-Place
+                        ul.nav.text-white.border-bottom.mb-4
+                            li.nav-item.px-2
+                                a.btn
+                                    h5.font-weight-bold Search for course
+                            li.nav-item.px-2
+                                a.btn
+                                    h5.font-weight-bold Search for a school
+
+
+
+                        form.form-inline.bg-white.pt-3
+                            .form-group.mb-2.col-md-2
+                                select.custom-select.mr-sm-2.w-100(searchable="Search here..")
+                                    option(selected='') Choose...
+                                    option(value='1') One
+                                    option(value='2') Two
+                                    option(value='3') Three
+                            .form-group.mb-2.col-md-2
+                                select.custom-select.mr-sm-2.w-100
+                                    option(selected='') Choose...
+                                    option(value='1') One
+                                    option(value='2') Two
+                                    option(value='3') Three
+        block content

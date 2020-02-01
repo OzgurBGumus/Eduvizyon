@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
-/* GET Enter Page. */
+/* GET HOMEPAGE. */
 router.get('/', function(req, res, next) {
-  res.render('enterPage', { title: 'Enterpage' });
+  res.render('homePage', { title: 'Express' });
 });
 
 module.exports = router;
