@@ -1,0 +1,27 @@
+.horizonal-Homepage-Schoolfilter{
+    list-style: none;
+}
+.horizonal-Homepage-Schoolfilter li{
+    float: left;
+    border: 1px solid rgba(0,0,0,.125)!important;
+    width: 20%;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.horizonal-Homepage-CourseCardList{
+    list-style: none;
+}
+.card-ListItem{
+    display: inline-block;
+    width: 30%;
+    height: 340px;
+    overflow: hidden;
+}
+.card-ListItem-Image{
+    height: 172px;
+}
+
+.homePage-CourseCard{
+    
+}
+

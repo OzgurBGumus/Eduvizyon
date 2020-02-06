@@ -1,7 +1,7 @@
 body {
     padding: 0px;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-    background-color: orange!important;
+    
   }
 .header{
     background-image: url('/images/homePage1.jpg');
@@ -43,6 +43,10 @@ body {
     border: none!important;
     box-shadow: 3px 4px 10px 8px rgba(227, 227, 227, 0.72);
 }
+.medShadow-box-dark{
+    border: none!important;
+    box-shadow: 3px 4px 10px 8px rgba(0, 0, 0, 0.22);
+}
 .lowShadow-boxH{
     border: none!important;
     box-shadow: 3px 4px 10px 8px rgba(227, 227, 227, 0.42);
@@ -55,6 +59,9 @@ body {
     color: white!important;
     font-size: 0.9rem;
 }
+.topHeader{
+    
+}
 .fixedSocials{
     background-color: white;
     right: 0px;
@@ -64,4 +71,10 @@ body {
 }
 .fixed-SocialLink{
 
+}
+.searchBoxes{
+    
+}
+.headerSchoolSearchBox{
+    border-radius: 10px;
 }

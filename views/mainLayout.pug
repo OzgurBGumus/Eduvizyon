@@ -42,7 +42,7 @@ html(lang='en')
                 li.list-group-item.p-0.border-0.py-1
                     a.fixed-SocialLink.btn.m-0.p-0.text-info(href='#')
                         <i class="fas fa-2x fa-share-alt"></i>
-            .header
+            .header(style='margin-bottom:100px')
                 .container.px-0
                     .topMenu1.py-2
                         img.logo(src='/images/logo-eduvizyon.png')
@@ -99,7 +99,7 @@ html(lang='en')
 
 
 
-                        form.form-inline.bg-white.pt-3
+                        form.form-inline.bg-white.pt-3.headerSchoolSearchBox.medShadow-box-dark
                             .form-group.mb-2.col-md-2
                                 select.custom-select.mr-sm-2.w-100(searchable="Search here..")
                                     option(selected='') Choose...
@@ -112,4 +112,5 @@ html(lang='en')
                                     option(value='1') One
                                     option(value='2') Two
                                     option(value='3') Three
-        block content
+        .container
+            block content
