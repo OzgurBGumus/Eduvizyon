@@ -11,7 +11,6 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     meta(http-equiv='X-UA-Compatible', content='ie=edge')
     block stylesheets
-      link(href='https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css', rel='stylesheet', type='text/css')
       link(rel='stylesheet', href='/stylesheets/mainTopMenu.css')
       link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css', integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh', crossorigin='anonymous')
     block headersScripts
@@ -23,7 +22,6 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
     title= title
   body
-        img(src="images/bgMain2.jpg", alt="" style='z-index:-999999; position:fixed; width:100%')
         div
             ul.list-group.fixedSocials.position-fixed.p-0.text-center.p-1.medShadow-box
                 li.list-group-item.p-0.border-0.py-1
@@ -44,7 +42,7 @@ html(lang='en')
                 li.list-group-item.p-0.border-0.py-1
                     a.fixed-SocialLink.btn.m-0.p-0.text-info(href='#')
                         <i class="fas fa-2x fa-share-alt"></i>
-            .header.mb-2
+            .header(style='margin-bottom:100px')
                 .container.px-0
                     .topMenu1.py-2
                         img.logo(src='/images/logo-eduvizyon.png')
@@ -52,9 +50,9 @@ html(lang='en')
                             span.text-75
                             |  Reserve by phone
                             i.fas.fa-phone-volume.ml-1
-                        .btn.btn-sm.font-weight-normal.text-dark.mt-1.float-right.my-auto
+                        .btn.btn-sm.font-weight-normal.text-white.mt-1.float-right.my-auto
                             span.text-75
-                            |  info@Eduvizyon.com
+                            |  info@findcourse.com
                             i.far.fa-envelope.ml-1
                 .topMenu2
                     .container.px-2
@@ -62,7 +60,7 @@ html(lang='en')
                             button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
                                 span.navbar-toggler-icon
                             #navbarNav.collapse.navbar-collapse
-                                ul.navbar-nav.mr-auto
+                                ul.navbar-nav
                                     li.nav-item.px-2
                                         a.nav-link.topMenu2Link.py-1.font-weight-bold(href='#')
                                             | Language schools
@@ -72,8 +70,47 @@ html(lang='en')
                                     li.nav-item.px-2
                                         a.nav-link.topMenu2Link.py-1.font-weight-bold(href='#')
                                             |  How to book a language course
-                                a.nav-link.topMenu2Link.py-1.font-weight-bold.btn-danger.text-white(href='#searchCoursePlace').px-5.py-0
-                                        span  Search Now!
+                .topHeader.text-center.mb-4
+                    h1.text-white
+                        | Find Your Language Course Abroad at the Lowest Price
+                    div
+                        ul.nav.text-white.text-center.d-block
+                            li.nav-item.px-2.d-inline-block
+                                img.h-50.mr-1(src="https://media.findcourse.com/UI/newdesign/images/banners/winter2019/sl-price.svg", alt="")
+                                | Discounted prices 5٪ - 35٪
+                            li.nav-item.px-2.d-inline-block
+                                img.h-50.mr-1(src="https://media.findcourse.com/UI/newdesign/images/banners/winter2019/sl-coupon.svg", alt="")
+                                | No hidden fees
+                            li.nav-item.px-2.d-inline-block
+                                img.h-50.mr-1(src="https://media.findcourse.com/UI/newdesign/images/banners/winter2019/sl-printer.svg", alt="")
+                                | Visa consultation
+                            li.nav-item.px-2.d-inline-block
+                                img.h-50.mr-1(src="https://media.findcourse.com/UI/newdesign/images/banners/winter2019/sl-printer.svg", alt="")
+                                | Personal Support
+                .searchBoxes.container.px-4
+                    .select-Search-Place
+                        ul.nav.text-white.border-bottom.mb-4
+                            li.nav-item.px-2
+                                a.btn
+                                    h5.font-weight-bold Search for course
+                            li.nav-item.px-2
+                                a.btn
+                                    h5.font-weight-bold Search for a school
 
-        div
+
+
+                        form.form-inline.bg-white.pt-3.headerSchoolSearchBox.medShadow-box-dark
+                            .form-group.mb-2.col-md-2
+                                select.custom-select.mr-sm-2.w-100(searchable="Search here..")
+                                    option(selected='') Choose...
+                                    option(value='1') One
+                                    option(value='2') Two
+                                    option(value='3') Three
+                            .form-group.mb-2.col-md-2
+                                select.custom-select.mr-sm-2.w-100
+                                    option(selected='') Choose...
+                                    option(value='1') One
+                                    option(value='2') Two
+                                    option(value='3') Three
+        .container
             block content
